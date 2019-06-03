@@ -1,0 +1,16 @@
+function User(name, age, email, savedPosts) {
+  this.name = name;
+  this.age = age;
+  this.email = email;
+  this.savedPosts = savedPosts;
+}
+
+User.prototype.addSavedPost = function(id, title, rating) {
+  this.savedPosts.push({id, title, rating})
+}
+
+// code here
+
+You will be using the constructor function you just created in problem 5. 
+
+Write a prototype method for the User constructor function named removeSavedPost that will take in one number parameter representing the post id. Use this id to find and remove the matching object in the savedPosts array. 
